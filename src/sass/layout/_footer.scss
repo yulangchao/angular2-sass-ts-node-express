@@ -69,12 +69,30 @@ $break-small: 600px;
 
 .form-group{
   display:table;
-  input{
+  .chat-content{
     display: table-cell;
     border-bottom-right-radius: 0px !important;
     border-top-right-radius: 0px !important;
   }
   span{
     display: table-cell;
+  }
+}
+
+
+@media screen and (max-width: $break-small) and (min-width: 330px)  {
+
+  footer{
+    display: none;
+  }
+  .chat-total{
+    padding-left: 0px;
+    padding-right: 0px;
+    #todo-list{
+      height:400px;
+      #chatlist{
+        height:380px;
+      }
+    }
   }
 }

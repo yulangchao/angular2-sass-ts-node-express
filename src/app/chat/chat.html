@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container chat-total">
 
   <!--&lt;!&ndash; HEADER AND TODO COUNT &ndash;&gt;-->
   <!--<div class="jumbotron text-center">-->
@@ -40,7 +40,7 @@
           <form>
               <div class="form-group">
                   <!-- BIND THIS VALUE TO todoData.text IN ANGULAR -->
-                  <input type="text" class="form-control input-md text-center" placeholder="I am a developer" [(ngModel)]="chatData.text" [disabled]="chatData.name==''" required>
+                  <input type="text" class="form-control input-md text-center chat-content" placeholder="I am a developer" [(ngModel)]="chatData.text" [disabled]="chatData.name==''" required>
 
               <!-- createToDo() WILL CREATE NEW chats -->
               <span class="input-group-btn">

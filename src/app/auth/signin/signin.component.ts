@@ -19,7 +19,11 @@ export class SignInComponent {
 	};
 	error: string;
 
-	constructor(private router: Router, private authService: AuthService){}
+	constructor(private router: Router, private authService: AuthService){
+		if (localStorage.getItem('token')) {
+			router.navigate(['Index']);
+		} 
+	}
 
 	onSubmit(){
 		this.authService.signin(this.signinData.username, this.signinData.password)
